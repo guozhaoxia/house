@@ -1,5 +1,5 @@
 <span style="font-size:10px;"><!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
  <title>MarkerWithLabel Example</title>
@@ -16,7 +16,7 @@
      white-space: nowrap;
    }
  </style>
- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=&sensor=false"></script>
+ <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=&sensor=false"></script>
  <script type="text/javascript" src="markerwithlabel.js"></script>
  <script type="text/javascript">
  // status: 0-未开始；1-正在销售；2-已售完
@@ -125,14 +125,14 @@ function setMarkers(map, infowindow) {
   for (var i = 0; i < houses.length; i++) {
     var house = houses[i];
     var status = '未开售';
-    image.url = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
+    image.url = 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
     if (house['status'] == 1){
       status = '销售中';
-      image.url = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+      image.url = 'https://maps.google.com/mapfiles/ms/icons/green-dot.png';
     }
     else if (house['status'] == 2){
       status = '已售完';
-      image.url = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+      image.url = 'https://maps.google.com/mapfiles/ms/icons/red-dot.png';
     }
     var content = '<div> 楼盘：' + house['name'] + '</div>' + 
               '<div> 面积：' + house['area'] + '</div>' +
